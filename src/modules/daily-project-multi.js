@@ -65,6 +65,9 @@ export default function (app, $$) {
                     show: false
                 }
             },
+            grid: {
+                top: 100
+            },
             yAxis: {
                 name: '%',
                 min: 60,
