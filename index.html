@@ -18,7 +18,7 @@
 <!-- Left panel with reveal effect-->
 <div class="panel panel-left panel-reveal">
     <div class="content-block">
-        <p>Left panel content goes here</p>
+        <p>K11 Reports</p>
     </div>
 </div>
 <!-- Views -->
@@ -45,27 +45,153 @@
             <div data-page="index" class="page">
                 <!-- Scrollable page content -->
                 <div class="page-content">
-
-                    <div class="content-block">
-                        <p>Page content goes here</p>
-                        <!-- Link to another page -->
-                        <!--<a href="page/about.html">About app</a>-->
-                        <a href="page/daily-project-single.html">Daily Report for Single Project</a><br/>
-                        <a href="page/daily-project-multi.html">Daily Report for Multi Projects Comparison</a><br/>
-                        <a href="page/monthly-project-single.html">Monthly Report for Single Project</a><br/>
-                        <a href="page/monthly-project-multi.html">Monthly Report for Multi Projects Comparison</a><br/>
+                    <div class="content-block-title">Page content goes here</div>
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a href="page/daily-project-single.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Daily Report for Single Project</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page/daily-project-multi/index.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Daily Report for Multi Projects Comparison</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page/monthly-project-single.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Monthly Report for Single Project</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page/monthly-project-multi/index.html" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Monthly Report for Multi Projects Comparison</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Bottom Toolbar-->
         <!--<div class="toolbar">-->
-            <!--<div class="toolbar-inner">-->
-                <!--&lt;!&ndash; Toolbar links &ndash;&gt;-->
-                <!--<a href="#" class="link">链接 1</a>-->
-                <!--<a href="#" class="link">Link 2</a>-->
-            <!--</div>-->
+        <!--<div class="toolbar-inner">-->
+        <!--&lt;!&ndash; Toolbar links &ndash;&gt;-->
+        <!--<a href="#" class="link">链接 1</a>-->
+        <!--<a href="#" class="link">Link 2</a>-->
         <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="popup popup-monthly-project-multi-echarts">
+    <div class="content-block">
+        <p>
+            <a href="#" class="close-popup link">
+                <i class="icon icon-back"></i>
+                <span style="font-size:17px;">Back</span>
+            </a>
+        </p>
+
+        <div class="list-block">
+            <ul>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <!-- Checked by default -->
+                        <input type="checkbox" name="projects-checkbox" value="K11 HK" checked="checked">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 HK</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="projects-checkbox" value="K11 SH" checked="checked">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 SH</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <!-- Checked by default -->
+                        <input type="checkbox" name="projects-checkbox" value="K11 GZ">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 GZ</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="projects-checkbox" value="K11 WHGG">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 WHGG</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="projects-checkbox" value="K11 SYAM">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 SYAM</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="projects-checkbox" value="K11 D Park">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 D Park</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="label-checkbox item-content">
+                        <input type="checkbox" name="projects-checkbox" value="K11 Kuriosity">
+                        <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">K11 Kuriosity</div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="vendors.min.js"></script><script type="text/javascript" src="polyfill.min.js"></script><script type="text/javascript" src="app.min.js"></script></body>
