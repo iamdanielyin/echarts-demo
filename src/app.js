@@ -42,8 +42,8 @@ $$(document).on('pageInit', function (e) {
 });
 
 // Option 2. Using live 'pageInit' event handlers for each page
-// $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
-//     console.log('about.pageInit');
-//     // Following code will be executed for page with data-page attribute equal to "about"
-//     // app.alert('Here comes About page');
-// });
+$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
+    console.log('about.pageInit');
+    // Following code will be executed for page with data-page attribute equal to "about"
+    // app.alert('Here comes About page');
+});
