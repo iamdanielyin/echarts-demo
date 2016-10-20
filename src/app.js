@@ -6,6 +6,10 @@ import 'framework7/dist/css/framework7.ios.colors.css';
 import 'less/index.less';
 
 import echarts from 'echarts';
+import dailyProjectSingle from 'modules/daily-project-single';
+import dailyProjectMulti from 'modules/daily-project-multi';
+import monthlyProjectSingle from 'modules/monthly-project-single';
+import monthlyProjectMulti from 'modules/monthly-project-multi';
 
 
 // Initialize app and store it to app variable for futher access to its methods
@@ -18,14 +22,21 @@ const app = new Framework7({
     modalPreloaderTitle: '加载中...'
 });
 
-// We need to use custom DOM library, let's save it to $$ variable:
 const $$ = Dom7;
+
+//加载模块
+dailyProjectSingle(app, $$);
+dailyProjectMulti(app, $$);
+monthlyProjectSingle(app, $$);
+monthlyProjectMulti(app, $$);
+
 
 // Add view
 const mainView = app.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
     dynamicNavbar: true
 });
+
 
 // Now we need to run the code that will be executed only for About page.
 
@@ -38,12 +49,6 @@ const mainView = app.addView('.view-main', {
 $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
-    console.log('pageInit...娃哈哈');
-});
-
-// Option 2. Using live 'pageInit' event handlers for each page
-$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
-    console.log('about.pageInit');
-    // Following code will be executed for page with data-page attribute equal to "about"
-    // app.alert('Here comes About page');
+    // console.log(page);
+    console.log('pageInit...');
 });
