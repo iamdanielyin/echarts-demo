@@ -11,6 +11,7 @@ import echarts from 'echarts';
 import dailyProjectSingle from 'modules/daily-project-single';
 import dailyProjectMulti from 'modules/daily-project-multi';
 import dailyProjectForSH from 'modules/daily-project-for-sh';
+import dailyProjectForAdrain from 'modules/daily-project-for-adrain';
 import monthlyProjectSingle from 'modules/monthly-project-single';
 import monthlyProjectMulti from 'modules/monthly-project-multi';
 
@@ -31,6 +32,7 @@ const $$ = Dom7;
 dailyProjectSingle(app, $$);
 dailyProjectMulti(app, $$);
 dailyProjectForSH(app, $$);
+dailyProjectForAdrain(app, $$);
 monthlyProjectSingle(app, $$);
 monthlyProjectMulti(app, $$);
 
