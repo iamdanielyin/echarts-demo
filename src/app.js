@@ -3,11 +3,14 @@
 import 'framework7/dist/js/framework7.min';
 import 'framework7/dist/css/framework7.ios.min.css';
 import 'framework7/dist/css/framework7.ios.colors.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'less/index.less';
 
 import echarts from 'echarts';
 import dailyProjectSingle from 'modules/daily-project-single';
 import dailyProjectMulti from 'modules/daily-project-multi';
+import dailyProjectForSH from 'modules/daily-project-for-sh';
 import monthlyProjectSingle from 'modules/monthly-project-single';
 import monthlyProjectMulti from 'modules/monthly-project-multi';
 
@@ -27,6 +30,7 @@ const $$ = Dom7;
 //加载模块
 dailyProjectSingle(app, $$);
 dailyProjectMulti(app, $$);
+dailyProjectForSH(app, $$);
 monthlyProjectSingle(app, $$);
 monthlyProjectMulti(app, $$);
 
