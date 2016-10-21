@@ -12,6 +12,7 @@ const webpack = require('webpack');
 const WebpackDevServer = require("webpack-dev-server");
 const config = require('./webpack.config');
 const htmlmin = require('gulp-htmlmin');
+const imagemin = require('gulp-imagemin');
 
 const port = 1220;
 
@@ -30,6 +31,21 @@ gulp.task('html', function () {
     return gulp.src('src/page/**/*.html')
         .pipe(gulp.dest(dest))
 });
+// images
+gulp.task('images', function () {
+    const dest = (process.env.NODE_ENV == 'production') ? 'dist/assets/images' : 'build/assets/images';
+    fs.emptyDirSync(dest);
+    return gulp.src('src/assets/images/**/*\.*')
+        .pipe(gulp.dest(dest))
+});
+// images
+gulp.task('minify-images', function () {
+    const dest = (process.env.NODE_ENV == 'production') ? 'dist/assets/images' : 'build/assets/images';
+    fs.emptyDirSync(dest);
+    return gulp.src('src/assets/images/**/*\.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest(dest))
+});
 
 // webpack
 gulp.task('webpack', function (callback) {
@@ -40,6 +56,7 @@ gulp.task('webpack', function (callback) {
             color: true
         }));
         fs.copySync('src/page', path.resolve(__dirname, config.output.path, 'page'));
+        fs.copySync('src/assets', path.resolve(__dirname, config.output.path, 'assets'));
         callback();
     });
 });
@@ -73,6 +90,7 @@ gulp.task('webpack-dev-server', function (callback) {
 // 文档临听任务
 gulp.task('watch', ['build'], function () {
     gulp.watch('src/page/**/*\.html', ['html']);//监听html变化
+    gulp.watch('src/assets/images/**/*\.*', ['images']);//监听images变化
 });
 
 // 生产环境构建任务
@@ -90,7 +108,7 @@ gulp.task('webpack-deploy', function (callback) {
 
 gulp.task("build", ['webpack']);
 gulp.task("hot", ['webpack', 'webpack-dev-server', 'watch']);
-gulp.task("deploy", ['webpack-deploy', 'minify-html']);
+gulp.task("deploy", ['webpack-deploy', 'minify-html', 'minify-images']);
 
 
 // 注册默认任务

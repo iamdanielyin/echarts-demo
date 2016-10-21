@@ -7,14 +7,13 @@ import 'framework7/dist/css/framework7.ios.colors.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'less/index.less';
 
-import echarts from 'echarts';
 import dailyProjectSingle from 'modules/daily-project-single';
 import dailyProjectMulti from 'modules/daily-project-multi';
 import dailyProjectForSH from 'modules/daily-project-for-sh';
 import dailyProjectForAdrain from 'modules/daily-project-for-adrain';
 import monthlyProjectSingle from 'modules/monthly-project-single';
 import monthlyProjectMulti from 'modules/monthly-project-multi';
-
+import rankingList from 'modules/ranking-list';
 
 // Initialize app and store it to app variable for futher access to its methods
 const app = new Framework7({
@@ -35,6 +34,7 @@ dailyProjectForSH(app, $$);
 dailyProjectForAdrain(app, $$);
 monthlyProjectSingle(app, $$);
 monthlyProjectMulti(app, $$);
+rankingList(app, $$);
 
 
 // Add view
