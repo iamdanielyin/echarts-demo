@@ -24,34 +24,61 @@ export default function (app, $$) {
 
         // 基于准备好的dom，初始化echarts实例
         chart = echarts.init(document.getElementById('ranking-list'));
+        let data = ['Mike', 'Jeans', 'Tony', 'Jane', 'John', 'David', 'Mike', 'Jeans', 'Tony', 'Jane', 'John', 'David'];
         // option
         option = {
             title: {
-                text: '粉丝PK排行榜'
+                text: '粉丝PK排行榜',
+                top: '5px',
+                left: '10px'
             },
             tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                    type: 'shadow'
-                }
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
+                top: '40px',
+                left: '27%',
+                // right: '4%',
                 bottom: '3%',
                 containLabel: true
             },
             xAxis: {
-                type: 'value'
+                type: 'value',
+                splitNumber: 50,
+                boundaryGap: [0, 0.1],
+                axisLine: {show: false},
+                axisLabel: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false}
             },
             yAxis: {
                 type: 'category',
-                data: ['Mike', 'Jeans', 'Tony', 'Jane', 'John', 'David']
+                data: data,
+                splitNumber: 50,
+                // axisLabel: {
+                //     formatter: function (value, i) {
+                //         return (data.length - i) + '  ' + value + ' kg';
+                //     }
+                // },
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false}
             },
             series: [
                 {
                     type: 'bar',
-                    data: [182, 239, 290, 449, 734, 960]
+                    data: [182, 239, 290, 449, 734, 960, 1182, 2139, 2290, 4249, 7034, 9600],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'right',
+                                formatter: function (object) {
+                                    return object.value;
+                                }
+                            }
+                        }
+                    }
                 }
             ]
         };
