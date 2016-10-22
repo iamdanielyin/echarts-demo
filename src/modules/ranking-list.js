@@ -19,7 +19,7 @@ export default function (app, $$) {
             maxDate: new Date()
         });
 
-
+/**
         let chart = null, option = null;
 
         // 基于准备好的dom，初始化echarts实例
@@ -83,6 +83,6 @@ export default function (app, $$) {
             ]
         };
         chart.setOption(option);
-
+**/
     });
 };

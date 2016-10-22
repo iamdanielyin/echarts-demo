@@ -16,126 +16,347 @@
     </div>
 </div>
 <div class="pages">
-    <div data-page="ranking-list" class="page">
+    <div data-page="ranking-list" class="page no-navbar">
         <div class="page-content">
 
-            <div class="list-block" style="margin: 0;">
-                <ul>
-                    <li class="item-content">
-                        <div class="item-inner">
-                            <div class="item-input">
-                                <input type="text" placeholder="Select date range" readonly
-                                       id="calendar-range">
-                            </div>
+            <!-- 时间选择框 -->
+            <div class="card ranking-list-card" style="position: relative;">
+                <img src="../assets/images/gold.png" style="height: 70px; position: absolute; top:0; right:6px;"/>
+                <div class="card-header" style="font-weight: bolder; min-height: 34px; padding: 10px 15px 0 15px;">粉丝PK排行榜</div>
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title"
+                                                 style="min-width: 75px;font-size: 15px;color: #8c8c8c;">
+                                                统计范围
+                                            </div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="Select date range" readonly
+                                                       id="calendar-range" style="color:#8c8c8c; font-size: 14px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="ranking-list-container">
-                <div class="list-block" style="margin: 0;">
-                    <div id="ranking-list" style="width: 100%; height:630px;"></div>
+                    </div>
                 </div>
-                <div class="list-block" style="margin: 0;">
-                    <ul class="ranking-list-avatars">
-                        <li class="item-content">
-                            <div class="item-media">
+            </div>
+
+            <!-- 排行榜列表框 -->
+            <div class="card ranking-list-card">
+                <!--<div class="card-header">粉丝排行榜</div>-->
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        <div class="list-block">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
-                                            <img src="../assets/images/1.png" height="34">
+                                            <img src="../assets/images/1.png" height="30">
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva3.sinaimg.cn/crop.0.0.996.996.180/006l9wRCjw8f8g8nt6gqbj30ro0rp779.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Sunny</div>
+                                        <div class="item-after"
+                                             style="color:#f8950f; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 20px; font-weight: bolder;">
+                                            392982
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
-                                            <img src="../assets/images/2.png" height="34">
+                                            <img src="../assets/images/2.png" height="30">
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva1.sinaimg.cn/crop.0.0.180.180.180/c0ed7ee0jw1e8qgp5bmzyj2050050aa8.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Vincent</div>
+                                        <div class="item-after"
+                                             style="color:#baa974; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 20px; font-weight: bolder;">
+                                            379383
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
-                                            <img src="../assets/images/3.png" height="34">
+                                            <img src="../assets/images/3.png" height="30">
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva1.sinaimg.cn/crop.0.0.180.180.180/6ccbf69ejw1e8qgp5bmzyj2050050aa8.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">David</div>
+                                        <div class="item-after"
+                                             style="color:#baa974; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 20px; font-weight: bolder;">
+                                            360933
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>4</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva4.sinaimg.cn/crop.0.0.1328.1328.180/006a1Xbpjw8f5uflqj6uoj310w10w0vd.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Melody</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            356211
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>5</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva4.sinaimg.cn/crop.0.0.750.750.180/87719d11jw8f40ty4frkrj20ku0kvq48.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Fenny</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            349218
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>6</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva4.sinaimg.cn/crop.0.0.640.640.180/644ac3f8jw8f1fbvlh9myj20hs0hsjrz.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Song</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            342203
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>7</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva3.sinaimg.cn/crop.0.0.750.750.180/6807ec44jw8f8s7osaco5j20ku0ku75s.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Mins</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            339282
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>8</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva3.sinaimg.cn/crop.0.1.1242.1242.180/e2f97ff4jw8exv8q56k8yj20yi0yk0ua.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Lianz</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            301177
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>9</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva3.sinaimg.cn/crop.0.10.492.492.180/6709af78jw8f8onz8fl4pj20do0e8t8w.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Cheung</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            273302
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>10</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva3.sinaimg.cn/crop.0.0.512.512.180/942fc99ejw8f5sqlutrjqj20e80e8mxv.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">ZhangYu</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            241176
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>11</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
+                                        <img src="http://tva4.sinaimg.cn/crop.7.0.498.498.180/006cp59Jjw8f7pjm3pb66j30e80du3z3.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Susan</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            221817
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media">
                                         <span class="ranking-list-no">
                                             <span>12</span>
                                         </span>
-                                <img src="../assets/images/avatar.png" width="34" height="34">
-                            </div>
-                        </li>
-                    </ul>
+                                        <img src="http://tva3.sinaimg.cn/crop.1.0.637.637.180/c47b49ffjw8f0ud8fmtarj20hs0hp0tn.jpg"
+                                             class="img-circle" width="34" height="34">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title">WangJie</div>
+                                        <div class="item-after"
+                                             style="color:#cdc89d; font-family: Arial, Helvetica,'Microsoft YaHei','黑体','宋体', sans-serif; font-size: 18px; font-weight: bolder;">
+                                            206534
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+
+                <!--<div class="ranking-list-container">-->
+                <!--<div class="list-block" style="margin: 0;">-->
+                <!--<div id="ranking-list" style="width: 100%; height:630px;"></div>-->
+                <!--</div>-->
+                <!--<div class="list-block" style="margin: 0;">-->
+                <!--<ul class="ranking-list-avatars">-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<img src="../assets/images/1.png" height="34">-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<img src="../assets/images/2.png" height="34">-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<img src="../assets/images/3.png" height="34">-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>4</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>5</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>6</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>7</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>8</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>9</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>10</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>11</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="item-content">-->
+                <!--<div class="item-media">-->
+                <!--<span class="ranking-list-no">-->
+                <!--<span>12</span>-->
+                <!--</span>-->
+                <!--<img src="../assets/images/avatar.png" width="34" height="34">-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+
+            </div>
         </div>
-    </div>

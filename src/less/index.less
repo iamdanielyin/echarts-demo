@@ -2,7 +2,10 @@
 @import "daily-project-single";
 
 .ranking-list-no {
-  width: 40px;
+  min-width: 40px;
+  width: 48px;
+  text-align: center;
+  margin-right: 12px;
   > img {
 
   }
@@ -12,14 +15,30 @@
     width: 20px;
     line-height: 30px;
     text-align: center;
+    font-size: 22px;
     font-family: '黑体';
-    font-weight: bold;
-    color: #fff;
+    font-weight: bolder;
+    color: #999999;
 
-    background: #0a6ebd;
+    //background: #0a6ebd;
   }
 }
 
+.ranking-list-card {
+  .card-header:after{
+    background-color: transparent;
+  }
+  .list-block > ul > .item-content {
+    //background: red;
+    //background-color: #c8c7cc;
+    //border-bottom: 1px solid #F2F1F9;
+  }
+  .list-block .item-inner:after {
+    background-color: transparent;
+  }
+}
+
+/**
 .ranking-list-container {
   background: #fff;
   position: relative;
@@ -35,4 +54,4 @@ ul.ranking-list-avatars {
     height: 46.2px;
     background: transparent;
   }
-}
+}**/
