@@ -4,6 +4,9 @@
   }
 
   .weibo-weixin {
+    > .card-content > .card-content-inner.row {
+      //margin: 0;
+    }
     .weibo-weixin-header {
       color: #000;
       max-width: 100%;
@@ -15,14 +18,14 @@
         border-radius: @weibo-weixin-header-size/2;
         line-height: @weibo-weixin-header-size+1.5rem;
         text-align: center;
-        margin-left: 30px;
+        margin-left: 1.6rem;
         > i {
-          font-size: 4rem;
+          font-size: 3.5rem;
         }
       }
       > div:last-child {
         > div:first-child {
-          margin-top: 8px;
+          margin-top: 0.5rem;
         }
         > div:last-child {
           font-size: 1.8rem;
@@ -51,15 +54,9 @@
     .weibo-weixin-content {
       text-align: center;
       color: #c5c5c5;
-
-      //.card-content > .card-content-inner > .row {
-      //  .col-50:first-child {
-      //    text-align: right;
-      //  }
-      //  .col-50:last-child {
-      //    text-align: left;
-      //  }
-      //}
+      .card-header {
+        font-size: 1.3rem;
+      }
     }
 
     .weibo-content {
