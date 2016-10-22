@@ -2,4 +2,79 @@
   .table {
     font-size: 1.2rem;
   }
+
+  .weibo-weixin {
+    .weibo-weixin-header {
+      color: #000;
+      max-width: 100%;
+      @weibo-weixin-header-size: 5rem;
+      > div:first-child {
+        width: @weibo-weixin-header-size;
+        height: @weibo-weixin-header-size;
+        border: 1px solid #cccccc;
+        border-radius: @weibo-weixin-header-size/2;
+        line-height: @weibo-weixin-header-size+1.5rem;
+        text-align: center;
+        margin-left: 30px;
+        > i {
+          font-size: 4rem;
+        }
+      }
+      > div:last-child {
+        > div:first-child {
+          margin-top: 8px;
+        }
+        > div:last-child {
+          font-size: 1.8rem;
+          font-weight: bolder;
+        }
+      }
+    }
+    .weibo-header {
+      color: #6ab9fe;
+      > div:first-child {
+        background-color: #6ab9fe;
+      }
+      .fa-weibo {
+        color: #fff;
+      }
+    }
+    .weixin-header {
+      color: #abd29d;
+      > div:first-child {
+        background-color: #abd29d;
+      }
+      .fa-weixin {
+        color: #fff;
+      }
+    }
+    .weibo-weixin-content {
+      text-align: center;
+      color: #c5c5c5;
+
+      //.card-content > .card-content-inner > .row {
+      //  .col-50:first-child {
+      //    text-align: right;
+      //  }
+      //  .col-50:last-child {
+      //    text-align: left;
+      //  }
+      //}
+    }
+
+    .weibo-content {
+      border: 1px solid #6ab9fe;
+      > .card-header:first-child {
+        color: #fff;
+        background-color: #6ab9fe;
+      }
+    }
+    .weixin-content {
+      border: 1px solid #abd29d;
+      > .card-header:first-child {
+        color: #fff;
+        background-color: #abd29d;
+      }
+    }
+  }
 }

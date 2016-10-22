@@ -352,10 +352,10 @@ export default function (app, $$) {
         chart = echarts.init(document.getElementById('daily-project-for-sh-app'));
         // 绘制图表
         option = {
-            title: {
-                text: 'APP',
-                left: '10px'
-            },
+            // title: {
+            //     text: 'APP',
+            //     left: '10px'
+            // },
             tooltip: {
                 show: false
             },

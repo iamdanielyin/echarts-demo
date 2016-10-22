@@ -4,7 +4,8 @@ import 'framework7/dist/js/framework7.min';
 import 'framework7/dist/css/framework7.ios.min.css';
 import 'framework7/dist/css/framework7.ios.colors.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import 'less/index.less';
 
 import dailyProjectSingle from 'modules/daily-project-single';

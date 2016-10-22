@@ -29,7 +29,8 @@
   "homepage": "https://github.com/yinfxs/echarts-demo#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "echarts": "^3.2.3"
+    "echarts": "^3.2.3",
+    "font-awesome": "^4.6.3"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
