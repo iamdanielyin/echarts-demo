@@ -60,7 +60,7 @@ export default function (app, $$) {
             xAxis: {
                 data: xAxisData,
                 silent: false,
-                offset: -140,
+                offset: -120,
                 splitLine: {
                     show: false
                 }
@@ -70,8 +70,8 @@ export default function (app, $$) {
             },
             yAxis: {
                 name: '%',
-                min: 60,
-                max: 140
+                min: 0,
+                max: 200
             },
             series: [
                 {

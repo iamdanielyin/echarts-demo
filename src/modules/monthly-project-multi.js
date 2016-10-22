@@ -70,8 +70,8 @@ export default function (app, $$) {
             },
             yAxis: {
                 name: '%',
-                min: 60,
-                max: 140
+                min: 0,
+                max: 200
             },
             series: [
                 {

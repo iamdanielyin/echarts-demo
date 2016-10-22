@@ -20,15 +20,16 @@ export default function (app, $$) {
         // option
         option = {
             title: {
-                text: 'Gold Card'
+                text: 'Gold Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -56,6 +57,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -66,15 +75,16 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'Black Card'
+                text: 'Black Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -102,6 +112,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -113,15 +131,16 @@ export default function (app, $$) {
         // option
         option = {
             title: {
-                text: 'Gold Card'
+                text: 'Gold Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -149,6 +168,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -159,15 +186,16 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'Black Card'
+                text: 'Black Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -195,6 +223,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -206,15 +242,16 @@ export default function (app, $$) {
         // option
         option = {
             title: {
-                text: 'Gold Card'
+                text: 'Gold Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -242,6 +279,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -252,15 +297,16 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'Black Card'
+                text: 'Black Card',
+                left: '10px'
             },
             tooltip: {
-                alwaysShowContent: true
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: [
@@ -288,6 +334,14 @@ export default function (app, $$) {
                                 name: 'Y 轴值为 100 的水平线',
                                 yAxis: 100
                             }]
+                    },
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
                     }
                 }
             ]
@@ -299,18 +353,19 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'APP'
+                text: 'APP',
+                left: '10px'
             },
             tooltip: {
-                trigger: 'axis'
+                show: false
             },
             legend: {
-                data:['iOS','Android']
+                data: ['iOS', 'Android']
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             toolbox: {
@@ -321,23 +376,39 @@ export default function (app, $$) {
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['1','2','3','4','5','6','7','8','9','10']
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
             },
             yAxis: {
                 type: 'value'
             },
             series: [
                 {
-                    name:'iOS',
-                    type:'line',
+                    name: 'iOS',
+                    type: 'line',
                     stack: '总量',
-                    data:[120, 132, 101, 134, 90, 230, 210]
+                    data: [120, 132, 101, 134, 90, 230, 210],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 },
                 {
-                    name:'Android',
-                    type:'line',
+                    name: 'Android',
+                    type: 'line',
                     stack: '总量',
-                    data:[220, 182, 191, 234, 290, 330, 310]
+                    data: [220, 182, 191, 234, 290, 330, 310],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 },
             ]
         };
@@ -348,29 +419,38 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'Mall Sales'
+                text: 'Mall Sales',
+                left: '10px'
             },
             tooltip: {
-                trigger: 'axis'
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['1','2','3','4','5','6','7','8','9','10']
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
             },
             yAxis: {
                 type: 'value'
             },
             series: [
                 {
-                    type:'line',
-                    data:[120, 132, 101, 134, 90, 230, 210]
+                    type: 'line',
+                    data: [120, 132, 101, 134, 90, 230, 210],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 }
             ]
         };
@@ -380,40 +460,57 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: 'Footfall'
+                text: 'Footfall',
+                left: '10px'
             },
             tooltip: {
-                trigger: 'axis'
+                show: false
             },
             legend: {
-                data:['iOS','Android']
+                data: ['iOS', 'Android']
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['1','2','3','4','5','6','7','8','9','10']
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
             },
             yAxis: {
                 type: 'value'
             },
             series: [
                 {
-                    name:'iOS',
-                    type:'line',
+                    name: 'iOS',
+                    type: 'line',
                     stack: '总量',
-                    data:[120, 132, 101, 134, 90, 230, 210]
+                    data: [120, 132, 101, 134, 90, 230, 210],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 },
                 {
-                    name:'Android',
-                    type:'line',
+                    name: 'Android',
+                    type: 'line',
                     stack: '总量',
-                    data:[220, 182, 191, 234, 290, 330, 310]
+                    data: [220, 182, 191, 234, 290, 330, 310],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 },
             ]
         };
@@ -423,29 +520,38 @@ export default function (app, $$) {
         // 绘制图表
         option = {
             title: {
-                text: '艺游'
+                text: '艺游',
+                left: '10px'
             },
             tooltip: {
-                trigger: 'axis'
+                show: false
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                // left: '3%',
+                // right: '4%',
+                // bottom: '3%',
                 containLabel: true
             },
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['1','2','3','4','5','6','7','8','9','10']
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
             },
             yAxis: {
                 type: 'value'
             },
             series: [
                 {
-                    type:'line',
-                    data:[120, 132, 101, 134, 90, 230, 210]
+                    type: 'line',
+                    data: [120, 132, 101, 134, 90, 230, 210],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                position: 'top'
+                            }
+                        }
+                    }
                 }
             ]
         };
